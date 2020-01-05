@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+      
+        <h1>Mes Données</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Mon Profile</legend>
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="user_nom">
+          
+          <label for="prenom">Prenom:</label>
+          <input type="text" id="prenom" name="user_Prenom">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="telephone">Telephone:</label>
+          <input type="number" id="telephone" name="user_telephone">
+          
+          <label>Sexe :</label>
+          <input type="radio" id="feminin" value="Feminin" name="user_sexe">
+          <label for="feminin" class="light">Femme</label><br>
+          <input type="radio" id="homme" value="hommme" name="user_sexe">
+          <label for="homme" class="light">Homme</label>
+          
+          
+         <label for="adresse">Adresse :</label>
+          <input type="text" id="adresse" name="user_adresse">
+        
+        <label for="job">Ville :</label>
+        <select id="ville" name="user_ville">
+          <optgroup label="Maroc">
+            <option value="Mohammedia">Mohammedia</option>
+            <option value="Casabalanca">Casabalanca</option>
+            <option value="Eljadida">Eljadida</option>
+            <option value="Rabat">Rabat</option>
+            <option value="Ouarzazate">Ouarzazate</option>
+            <option value="Sidi_bennour">Sidi bennour</option>
+             <option value="Fes">Fes</option>
+             <option value="Marrakech">Marrakech</option>
+             <option value="Tanger">Tanger</option>
+             <option value="Kenitra">Kenitra</option>
+          </optgroup>
+        </select>
+       
+        <label for="code_postal">Code Postal :</label>
+          <input type="number" id="code_postal" name="user_codePostal">
+          </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Infos supplémentaire</legend>
+          <label for="bio">Biographie:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+       
+           <label for="linkden">Compte Linkdin:</label>
+          <input type="URl" id="Linkdin" name="user_compteLkd">
+        
+        <label for="facebook">Compte Facebook:</label>
+          <input type="URl" id="Facebook" name="user_compteFb">
+        
+          <label>Interets:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label><br>
+            <input type="checkbox" id="autres" value="autres" name="autres"><label class="light" for="autres">Autres</label>
+        
+        </fieldset>
+      
+        <button type="submit">Etape Suivante</button>
+      </form>
+      
+    </body>
+</html>
